@@ -1,6 +1,6 @@
 {
   "name": "@heytea/react-native-amap3d",
-  "version": "2.0.4",
+  "version": "2.0.7",
   "description": "react-native 高德地图组件，支持 Android(Google Play) + iOS",
   "author": "7c00 <i@7c00.cc>",
   "license": "MIT",
@@ -13,8 +13,7 @@
   "main": "lib/js",
   "files": [
     "lib/js",
-    "lib/android/src",
-    "lib/android/build.gradle",
+    "lib/android/",
     "lib/ios",
     "react-native.config.js"
   ],
