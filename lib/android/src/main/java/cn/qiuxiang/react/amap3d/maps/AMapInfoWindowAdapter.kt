@@ -25,6 +25,8 @@ class AMapInfoWindowAdapter(
         val titleView = TextView(context)
         titleView.text = marker.title
         titleView.setTextColor(Color.parseColor("#212121"))
+        layout.background = context.getDrawable(R.drawable.amap_infowindow)
+        layout.setPadding(20, 20, 20, 20)
         layout.addView(titleView)
 
         val snippet = marker.snippet
@@ -40,4 +42,6 @@ class AMapInfoWindowAdapter(
         return layout
     }
 }
+
+
 
