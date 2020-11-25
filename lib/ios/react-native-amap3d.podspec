@@ -3,7 +3,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, '../../package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = package['name']
+  s.name         = "react-native-amap3d"
   s.version      = package['version']
   s.summary      = package['description']
 
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files = '**/*.{h,m}'
 
   s.dependency 'React'
-  s.dependency 'AMap3DMap', "~> 7.2.0"
+  s.dependency 'AMap3DMap', "~> 7.5.0"
 end

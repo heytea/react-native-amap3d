@@ -171,7 +171,8 @@ export default class Marker extends Component<MarkerProps> {
 
   componentDidUpdate() {
     if (this.icon && Platform.OS === "android") {
-      setTimeout(() => this.call("update"), 0);
+      this.call("update")
+      // setTimeout(() => this.call("update"), 0);
     }
   }
 

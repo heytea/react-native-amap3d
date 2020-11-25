@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import cn.qiuxiang.react.amap3d.R
 import com.amap.api.maps.AMap.InfoWindowAdapter
 import com.amap.api.maps.model.Marker
 
