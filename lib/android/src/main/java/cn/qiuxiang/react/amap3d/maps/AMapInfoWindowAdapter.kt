@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import cn.qiuxiang.react.amap3d.R
 import com.amap.api.maps.AMap.InfoWindowAdapter
 import com.amap.api.maps.model.Marker
 
@@ -25,6 +26,8 @@ class AMapInfoWindowAdapter(
         val titleView = TextView(context)
         titleView.text = marker.title
         titleView.setTextColor(Color.parseColor("#212121"))
+        layout.background = context.getDrawable(R.drawable.amap_infowindow)
+        layout.setPadding(20, 20, 20, 20)
         layout.addView(titleView)
 
         val snippet = marker.snippet
